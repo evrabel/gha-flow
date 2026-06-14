@@ -11,8 +11,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Get code
-        uses: actions/checkout@v6
+      - name: Get artifacts
+        uses: actions/download-artifact@v8
         with:
           name: ${{ inputs.artifact-name }}
       - name: List files
