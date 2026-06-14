@@ -19,7 +19,3 @@ jobs:
         run: npm ci
       - name: Build project
         run: npm run build
-      - name: Output status
-        run: |
-          echo "Finished"
-          echo "${{ toJSON(github) }}"
